@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <title>Document</title>
+</head>
+<body class="bg-[#FAFAFA] dark:bg-[#202D36]">
+     <div class="container mx-auto px-0 lg:max-w-none">
+        <header class="w-full flex justify-between items-center p-4 shadow-xl 
+                        dark:bg-[#2B3743] md:p-5 lg:p-4">
+            <!-- Title -->
+            <p class="font-nunito-sans text-black font-bold text-md md:text-lg dark:text-white">
+                Where in the world?
+            </p>
+            <!-- Dark Mode Toggle -->
+            <div class="space-x-2 md:space-x-3 lg:space-x-4">
+                <i class="fa-solid fa-moon text-black dark:text-white"></i>
+                <button id="theme-toggle" class="font-normal dark:text-white dark:font-semibold">Dark Mode</button>
+            </div>
+        </header>
+
+         <div id="goBack-container" class="relative  space-x-2 md:space-x-3 lg:space-x-4 p-4 font-nunito-sans cursor-pointer">
+            <i class="absolute left-16 top-1/2 transform -translate-y-1/2 text-lg fa-solid fa-arrow-left text-black dark:text-white"></i>
+            <p class="shadow-lg inline-block bg-[#FFFFFF] rounded-lg dark:bg-[#2B3743] font-normal dark:text-white dark:font-semibold px-16 py-3">Back</p>
+         </div>
+
+
+         
+        <div id="countryContainer">
+           
+        </div>
+        
+
+       
+     </div>
+     <script src="./country.js" defer></script>
+</body>
+</html>

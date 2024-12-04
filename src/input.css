@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#dropdown-icon {
+    transition: transform 0.3s ease-in-out;  
+}
+
+.rotate {
+    transform: rotate(180deg); /* Rotated state */  
+}
+
+.img-container {
+  width: 100%; /* Full width */
+  height: 12rem; /* Fixed height (you can adjust) */
+  overflow: hidden; /* Ensures no overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures scaling without distortion */
+}
+

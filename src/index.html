@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <title>REST COUNTRIES</title>
+</head>
+
+<body class="bg-[#FAFAFA] dark:bg-[#202D36]">
+
+    <div class="container mx-auto px-0 lg:max-w-none">
+        <!-- Header -->
+        <header class="w-full flex justify-between items-center p-4 shadow-xl 
+                dark:bg-[#2B3743] md:p-5 lg:p-4">
+            <!-- Title -->
+            <p class="font-nunito-sans text-black font-bold text-md md:text-lg dark:text-white">
+                Where in the world?
+            </p>
+            <!-- Dark Mode Toggle -->
+            <div class="space-x-2 md:space-x-3 lg:space-x-4">
+                <i class="fa-solid fa-moon text-black dark:text-white"></i>
+                <button id="theme-toggle" class="font-normal dark:text-white dark:font-semibold">Dark Mode</button>
+            </div>
+        </header>
+
+
+        <!-- Search Bar -->
+        <div class="p-4 relative">
+            <!-- Search Icon -->
+            <i class="fa-solid fa-magnifying-glass absolute left-7 top-1/2 transform -translate-y-1/2 text-gray-400">
+            </i>
+            <!-- Input Field -->
+            <input id="countryInput" type="text" class="pl-12 rounded-lg p-5 block mx-auto w-full shadow-md
+                 bg-[#F3F4F6] text-black font-nunito-sans dark:bg-[#2B3743] dark:text-white
+                 " placeholder="Search for a country...">
+        </div>
+
+        
+    <div class="relative p-5">
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+            class="text-black bg-white shadow-md text-lg rounded-lg px-[50px] py-[20px] space-x-3 inline-flex items-center dark:bg-[#2B3743] dark:text-white"
+            type="button">Filter by Region
+            <i id="dropdown-icon" class="fa-solid fa-chevron-up ml-5"></i>
+        </button>
+    
+        <!-- Dropdown menu -->
+        <div id="dropdown"
+            class="hidden z-10 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-[#2B3743] absolute">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                <li class="block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    Africa
+                </li>
+                <li class="block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    America
+                </li>
+                <li class="block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    Asia
+                </li>
+                <li class="block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    Europe
+                </li>
+                <li class="block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                    Oceania
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+        <div class="grid gap-4 p-4 md:p-6 md:grid-cols-2 lg:grid-cols-4 font-nunito-sans" id="countries-container"></div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
